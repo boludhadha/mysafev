@@ -1,9 +1,8 @@
-// app/vendor/[id]/page.tsx
 import React from 'react';
 import Link from 'next/link';
-import { ChevronRight, ChevronLeft, Star, ExternalLink, Share2, Flag, MessageCircle } from 'lucide-react';
+import { ChevronLeft, Star, MapPin, ExternalLink, Share2, Flag, MessageCircle } from 'lucide-react';
 import { vendors } from '../../../data/vendors';
-import Navbar from '../../../components/layout/NavBar';
+import Navbar from '../../../components/layout/NavBar'
 
 // Generate static paths for all vendors
 export function generateStaticParams() {
@@ -28,9 +27,9 @@ export default function VendorPage({ params }: { params: { id: string } }) {
           </Link>
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
             <h1 className="text-2xl font-bold mb-4">Vendor Not Found</h1>
-            <p className="text-gray-600 mb-4">We couldn't find the vendor you're looking for.</p>
+            <p className="text-gray-600 mb-4">We couldn&apos;t find the vendor you&apos;re looking for.</p>
             <Link href="/vendors" className="text-blue-600 hover:underline">
-              browse all vendors
+              Browse all vendors
             </Link>
           </div>
         </div>
@@ -81,7 +80,7 @@ export default function VendorPage({ params }: { params: { id: string } }) {
       user: "Sarah Johnson",
       date: "March 15, 2025",
       rating: 5,
-      content: "Excellent service and quality products. I've ordered multiple times and have always been satisfied with my purchase. Shipping was fast and the packaging was secure."
+      content: "Excellent service and quality products. I&apos;ve ordered multiple times and have always been satisfied with my purchase. Shipping was fast and the packaging was secure."
     },
     {
       id: 2,
