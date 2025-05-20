@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ChevronLeft, Star, MapPin, ExternalLink, Share2, Flag, MessageCircle } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Star, MapPin, ExternalLink, Share2, Flag, MessageCircle } from 'lucide-react';
 import { vendors } from '../../../data/vendors';
 import Navbar from '../../../components/layout/NavBar'
 
