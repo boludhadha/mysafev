@@ -4,21 +4,28 @@ import { Search } from 'lucide-react';
 interface SearchBarProps {
   searchQuery: string;
   setSearchQuery: (query: string) => void;
+  className?: string;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ searchQuery, setSearchQuery }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ 
+  searchQuery, 
+  setSearchQuery,
+  className = "max-w-5xl" 
+}) => {
   return (
-    <div className="relative mb-15 max-w-2xl mx-auto">
-      <input 
-        type="text" 
-        className="w-full py-4 px-5 pr-12 rounded-full border border-gray-200 bg-white shadow-md focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-gray-300 transition text-lg"
-        placeholder="search for products or instagram vendors..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
-      <button className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition">
-        <Search size={30} color="white" />
-      </button>
+    <div className={`relative mb-8 mx-auto ${className}`}>
+      <div className="flex w-full overflow-hidden rounded-lg border border-gray-300">
+        <input 
+          type="text" 
+          className="w-full py-4 px-5 text-gray-700 bg-white focus:outline-none"
+          placeholder="search for products or instagram vendors..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+        <button className="bg-black text-white p-4 flex items-center justify-center hover:bg-gray-800 transition">
+          <Search size={24} color="white" />
+        </button>
+      </div>
     </div>
   );
 };

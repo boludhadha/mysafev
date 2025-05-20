@@ -48,12 +48,18 @@ a, button {
   transition: all 0.2s ease;
 }
 
-/* Hide scrollbar but allow scrolling */
-.hide-scrollbar {
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+/* Add smooth scrolling to the document */
+html {
+  scroll-behavior: smooth;
 }

@@ -1,3 +1,4 @@
+// components/ui/CategoryCard.tsx
 import React from 'react';
 import Link from 'next/link';
 import { Category } from '../../types/category';
@@ -8,15 +9,16 @@ interface CategoryCardProps {
 
 const CategoryCard: React.FC<CategoryCardProps> = ({ category }) => {
   return (
-    <Link 
-      href={`/category/${category.name}`} 
-      className="flex flex-col items-center shrink-0"
-    >
-      <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition mb-3 border border-gray-100">
-        {category.icon}
-      </div>
-      <span className="text-xs lowercase text-center whitespace-nowrap font-medium">{category.name}</span>
-    </Link>
+    <div className="flex flex-col items-center shrink-0 w-24">
+      <Link href={`/category/${category.name}`} className="w-full">
+        <div className="aspect-square w-full bg-white rounded-lg flex items-center justify-center border border-gray-300 mb-2 hover:border-gray-400 transition">
+          {category.icon}
+        </div>
+        <span className="text-xs text-center w-full block whitespace-nowrap font-normal text-gray-800">
+          {category.name}
+        </span>
+      </Link>
+    </div>
   );
 };
 

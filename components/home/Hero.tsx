@@ -1,3 +1,4 @@
+// components/home/Hero.tsx
 import React from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
@@ -21,12 +22,12 @@ const Hero: React.FC<HeroProps> = ({ searchQuery, setSearchQuery }) => {
         <h1 className="text-3xl md:text-5xl font-bold text-center mb-6 lowercase">
           find instagram vendors you can trust
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 text-center mb-20 lowercase">
-          real reviews by real people
+        <p className="text-lg md:text-xl text-gray-600 text-center mb-10 lowercase">
+          real reviews by real people, shop with confidence
         </p>
         
-        {/* Search Bar */}
-        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+        {/* Updated Search Bar */}
+        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} className="max-w-3xl" />
         
         {/* Quick Action Button */}
         <div className="text-center mb-12">

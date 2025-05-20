@@ -1,48 +1,83 @@
 // data/categories.tsx
 import { Category } from "../types/category";
 import { 
-  Shirt, 
-  Smartphone, 
-  Home, 
-  Sparkles, 
-  UtensilsCrossed, 
-  Package, 
-  PaintBucket,
-  Globe 
-} from "lucide-react";
+  ShoppingBag,
+  Battery,
+  Home,
+  Pipette,
+  Leaf,
+  ShoppingCart,
+  Gift,
+  BookOpen,
+  Baby,
+  Shirt,
+  Palette,
+  Dumbbell,
+  Camera,
+  Music,
+  PawPrint
+} from 'lucide-react';
 import React from "react";
 
 export const categories: Category[] = [
   {
     name: 'fashion',
-    icon: <Shirt size={28} strokeWidth={2} color="#262626" />
+    icon: <ShoppingBag size={24} strokeWidth={1.5} color="#000000" />
   },
   {
     name: 'electronics',
-    icon: <Smartphone size={28} strokeWidth={2} color="#262626" />
+    icon: <Battery size={24} strokeWidth={1.5} color="#000000" />
   },
   {
     name: 'home & living',
-    icon: <Home size={28} strokeWidth={2} color="#262626" />
+    icon: <Home size={24} strokeWidth={1.5} color="#000000" />
   },
   {
     name: 'beauty',
-    icon: <Sparkles size={28} strokeWidth={2} color="#262626" />
+    icon: <Pipette size={24} strokeWidth={1.5} color="#000000" />
   },
   {
     name: 'food',
-    icon: <UtensilsCrossed size={28} strokeWidth={2} color="#262626" />
+    icon: <Leaf size={24} strokeWidth={1.5} color="#000000" />
   },
   {
     name: 'digital products',
-    icon: <Package size={28} strokeWidth={2} color="#262626" />
+    icon: <ShoppingCart size={24} strokeWidth={1.5} color="#000000" />
   },
   {
-    name: 'handmade',
-    icon: <PaintBucket size={28} strokeWidth={2} color="#262626" />
+    name: 'gifts',
+    icon: <Gift size={24} strokeWidth={1.5} color="#000000" />
   },
   {
-    name: 'global brands',
-    icon: <Globe size={28} strokeWidth={2} color="#262626" />
+    name: 'books',
+    icon: <BookOpen size={24} strokeWidth={1.5} color="#000000" />
+  },
+  {
+    name: 'baby',
+    icon: <Baby size={24} strokeWidth={1.5} color="#000000" />
+  },
+  {
+    name: 'clothing',
+    icon: <Shirt size={24} strokeWidth={1.5} color="#000000" />
+  },
+  {
+    name: 'art',
+    icon: <Palette size={24} strokeWidth={1.5} color="#000000" />
+  },
+  {
+    name: 'fitness',
+    icon: <Dumbbell size={24} strokeWidth={1.5} color="#000000" />
+  },
+  {
+    name: 'photography',
+    icon: <Camera size={24} strokeWidth={1.5} color="#000000" />
+  },
+  {
+    name: 'music',
+    icon: <Music size={24} strokeWidth={1.5} color="#000000" />
+  },
+  {
+    name: 'pets',
+    icon: <PawPrint size={24} strokeWidth={1.5} color="#000000" />
   }
 ];
