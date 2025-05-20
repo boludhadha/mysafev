@@ -1,8 +1,10 @@
+// app/vendors/page.tsx
 import React from 'react';
 import Link from 'next/link';
-import { vendors } from '@/data/vendors';
+import { ChevronLeft } from 'lucide-react';
+import { vendors } from '../../data/vendors';
 import Navbar from '../../components/layout/NavBar';
-import VendorCard from '@/components/ui/VendorCard';
+import VendorCard from '../../components/ui/VendorCard';
 
 export default function VendorsPage() {
   return (
@@ -10,20 +12,18 @@ export default function VendorsPage() {
       <Navbar />
       
       <div className="px-4 py-8">
-        <div className="max-w-md mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="mb-6">
             <Link href="/" className="text-sm text-gray-600 flex items-center hover:text-gray-800 transition mb-4">
-              <svg width="16" height="16" className="mr-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+              <ChevronLeft size={16} className="mr-1" />
               back to home
             </Link>
             
-            <h1 className="text-2xl font-bold lowercase">all vendors</h1>
-            <p className="text-gray-600">Browse all trusted Instagram vendors</p>
+            <h1 className="text-2xl font-bold lowercase mb-2">all vendors</h1>
+            <p className="text-gray-600 mb-6">Browse trusted Instagram vendors with verified reviews</p>
           </div>
           
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {vendors.map(vendor => (
               <VendorCard key={vendor.id} vendor={vendor} />
             ))}

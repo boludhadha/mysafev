@@ -1,4 +1,3 @@
-
 // types/vendor.ts
 import { ReactNode } from 'react';
 
@@ -8,5 +7,8 @@ export interface Vendor {
   rating: number;
   reviews: number;
   category?: string;
-  icon?: ReactNode; // Added icon as an optional property
+  icon?: ReactNode;
+  website?: string;  // Added website URL
+  logo?: string;     // Added logo URL
+  description?: string;  // Added description
 }
