@@ -1,7 +1,7 @@
 // app/vendor/[id]/page.tsx
 import React from 'react';
 import Link from 'next/link';
-import { ChevronRight, ChevronLeft, Star, MapPin, ExternalLink, Share2, Flag, MessageCircle } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Star, ExternalLink, Share2, Flag, MessageCircle } from 'lucide-react';
 import { vendors } from '../../../data/vendors';
 import Navbar from '../../../components/layout/NavBar';
 
@@ -30,7 +30,7 @@ export default function VendorPage({ params }: { params: { id: string } }) {
             <h1 className="text-2xl font-bold mb-4">Vendor Not Found</h1>
             <p className="text-gray-600 mb-4">We couldn't find the vendor you're looking for.</p>
             <Link href="/vendors" className="text-blue-600 hover:underline">
-              Browse all vendors
+              browse all vendors
             </Link>
           </div>
         </div>

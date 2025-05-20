@@ -42,7 +42,7 @@ const VendorSection: React.FC<VendorSectionProps> = ({ vendors }) => {
   return (
     <div className="px-4 mb-16">
       <div className="flex justify-between items-center mb-6 max-w-5xl mx-auto">
-        <h2 className="text-xl font-bold lowercase">trusted vendors</h2>
+        <h2 className="text-xl font-bold lowercase">best wig vendors</h2>
         <div className="flex items-center space-x-2">
           {/* Navigation buttons */}
           <div className="flex">
@@ -66,7 +66,7 @@ const VendorSection: React.FC<VendorSectionProps> = ({ vendors }) => {
             href="/vendors" 
             className="bg-white text-gray-800 text-sm px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-50 transition"
           >
-            See all
+            explore
           </Link>
         </div>
       </div>
